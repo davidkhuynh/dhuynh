@@ -3,63 +3,89 @@
 
     <head>
     
+    <script 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    
+	<script> 
+	$(document).ready(function(){
+	    $("#flip").click(function(){
+	        $("#panel").slideDown("slow");
+	    });
+	});
+	</script>
+    
+    
         <style>
         
+        #panel, #flip {
+	    padding: 5px;
+	    text-align: center;
+	    background-color: #e5eecc;
+	    border: solid 1px #c3c3c3;
+	}
+
+	#panel {
+	    padding: 50px;
+	    display: none;
+	}
+	        
+        
+        
         ul#menu{  
-position:absolute;
-top: 0px; left: 0px; right: 0px;
-background-color:rgba(13, 13, 13, 0.5);    
-padding-top:20px;    
-padding-bottom:20px;
-margin: 0;}
+	position:absolute;
+	top: 0px; left: 0px; right: 0px;
+	background-color:rgba(13, 13, 13, 0.5);    
+	padding-top:20px;    
+	padding-bottom:20px;
+	margin: 0;}
 
-ul#menu li{    
-display:inline;    
-padding-right:50px;    
-padding-left:50px;}
+	ul#menu li{    
+	display:inline;    
+	padding-right:50px;    
+	padding-left:50px;}
 
-ul#menu li a {    
-color: white;    
-padding:10px;    
-text-decoration:none;    
-font-family: sans-serif;    
-width:25%;}
+	ul#menu li a {    
+	color: white;    
+	padding:10px;    
+	text-decoration:none;    
+	font-family: sans-serif;    
+	width:25%;}
 
 
-ul#menu li a:hover {    
-color:rgba(253, 253, 253, 0.3);    
--webkit-transition: all 300ms ease;    
--moz-transition: all 300ms ease;    
--ms-transition: all 300ms ease;    
--o-transition: all 300ms ease;    
-transition: all 300ms ease;}
+	ul#menu li a:hover {    
+	color:rgba(253, 253, 253, 0.3);    
+	-webkit-transition: all 300ms ease;    
+	-moz-transition: all 300ms ease;    
+	-ms-transition: all 300ms ease;    
+	-o-transition: all 300ms ease;    
+	transition: all 300ms ease;}
 
-.format {   
-display: inline-block;
-min-width:100%;
-width: 100%;
-height: 600px;
-position: absolute;
-top: 0px;
-z-index: -1;
-margin:0px;padding:0px;margin-left:0px;padding-left:0px;padding-top:0px;left:0px;
--webkit-filter: contrast(105%);
-}
+	.format {   
+	display: inline-block;
+	min-width:100%;
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+	margin:0px;padding:0px;margin-left:0px;padding-left:0px;padding-top:0px;left:0px;
+	-webkit-filter: contrast(105%);
+	}
 
-#headerSection{
-position: relative;top: 65px;left:15%;float:left;
-width: 70%;height: 40px;
-background-color: rgba(0, 0, 0, 0.8); 
+	#headerSection{
+	position: relative;top: 65px;left:15%;float:left;
+	width: 70%;height: 40px;
+	background-color: rgba(0, 0, 0, 0.8); 
+	}
 
-}
-
-.headerStyle{
-color: white;font-family: sans-serif;
-position:relative;
-top: -5px;
-left: 10px;;  
-
-}
+	.headerStyle{
+	color: white;font-family: sans-serif;
+	position:relative;
+	top: -5px;
+	left: 10px;;  
+	
+	}
 #section {
 position: relative;
 top: 65px;
@@ -183,6 +209,10 @@ color:white;
 		
 		
 			<img class="format" src="http://accesspressthemes.com/accesspress-ray/wp-content/uploads/2014/10/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg">
+			
+			
+			<div id="flip">Click to slide down panel</div>
+			<div id="panel">Hello world!</div>
 			
     </body>
     
