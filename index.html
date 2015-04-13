@@ -5,37 +5,139 @@
     
         <style>
         
-        ul#menu{
-            background-color:rgba(13, 13, 13, 0.5);
-            padding-top:20px;
-            padding-bottom:20px;
-        }
-        
-        ul#menu li{
-            display:inline;
-            padding-right:50px;
-            padding-left:50px;
-        }
-            
-        ul#menu li a{
-            color: white;
-            padding:10px;
-            text-decoration:none;
-            font-family: sans-serif;
-            width:25%;
-        }    
-        
-        ul#menu li a:hover{
-            color:rgba(253, 253, 253, 0.3);
-            -webkit-transition: all 300ms ease;
-            -moz-transition: all 300ms ease;
-            -ms-transition: all 300ms ease;
-            -o-transition: all 300ms ease;
-            transition: all 300ms ease;
-        }
-        #section{
-            background-color: pink;
-        }
+        ul#menu{  
+position:absolute;
+top: 0px; left: 0px; right: 0px;
+background-color:rgba(13, 13, 13, 0.5);    
+padding-top:20px;    
+padding-bottom:20px;
+margin: 0;}
+
+ul#menu li{    
+display:inline;    
+padding-right:50px;    
+padding-left:50px;}
+
+ul#menu li a {    
+color: white;    
+padding:10px;    
+text-decoration:none;    
+font-family: sans-serif;    
+width:25%;}
+
+
+ul#menu li a:hover {    
+color:rgba(253, 253, 253, 0.3);    
+-webkit-transition: all 300ms ease;    
+-moz-transition: all 300ms ease;    
+-ms-transition: all 300ms ease;    
+-o-transition: all 300ms ease;    
+transition: all 300ms ease;}
+
+.format {   
+display: inline-block;
+min-width:100%;
+width: 100%;
+height: 600px;
+position: absolute;
+top: 0px;
+z-index: -1;
+margin:0px;padding:0px;margin-left:0px;padding-left:0px;padding-top:0px;left:0px;
+-webkit-filter: contrast(105%);
+}
+
+#headerSection{
+position: relative;top: 65px;left:15%;float:left;
+width: 70%;height: 40px;
+background-color: rgba(0, 0, 0, 0.8); 
+
+}
+
+.headerStyle{
+color: white;font-family: sans-serif;
+position:relative;
+top: -5px;
+left: 10px;;  
+
+}
+#section {
+position: relative;
+top: 65px;
+left:15%;
+float:left;
+width: 70%;
+height: 410px;
+color: white;
+background-color: rgba(13, 13, 13, 0.5); 
+}
+
+.sectionStyle{
+color: white;font-family: sans-serif;position:relative;top: -5px;left: 10px;
+  }
+
+.image1 {
+position: absolute;
+top: 603px;
+width: 25%;
+z-index: -1;
+margin:0px;
+padding:0px;
+margin-left:0px;
+padding-left:0px;
+padding-top:0px;
+left:0px;
+-webkit-filter: contrast(105%);
+}
+
+.image2 {position: absolute;
+top: 603px;
+width: 25%;
+z-index: -1;
+margin:0px;
+padding:0px;
+margin-left:0px;padding-left:0px;padding-top:0px;left:303px;
+-webkit-filter: 
+contrast(105%);}
+
+.image3 {position: absolute;top: 603px;width: 25%;z-index: -1;margin:0px;padding:0px;margin-left:0px;padding-left:0px;padding-top:0px;left:606px;-webkit-filter: contrast(105%);}
+.image4 {position: absolute;top: 603px;width: 25%;z-index: -1;margin:0px;padding:0px;margin-left:0px;padding-left:0px;padding-top:0px;left:909px;-webkit-filter: contrast(105%);}
+
+ul#menu1 {    position:relative; top: 730px; padding-top:20px; padding-bottom:20px;margin: 0; width: 100%;}
+ul#menu1 li{    display:inline;}
+ul#menu1 li a {    color: white; text-decoration:none; font-size: 30px;font-family:Century Gothic, sans-serif; font-weight: 100}
+ul#menu1 li a:hover {    color:rgba(253, 253, 253, 0.3);    -webkit-transition: all 300ms ease;    -moz-transition: all 300ms ease;    -ms-transition: all 300ms ease;    -o-transition: all 300ms ease;    transition: all 300ms ease;}
+
+
+
+
+/*
+.tabs2 {float:left;border: 1px solid red;width: 24.5%;
+height: 40px;color: black;text-align: center;
+font-size: 30px; padding-bottom: 50px;
+font-family: sans-serif;}
+
+.tabfiller {
+float:left;border: 1px solid red;width: 24%;height: 40px;color: 
+white;text-align: center; 
+font-size: 40px; padding-bottom: 50px;font-family: sans-serif;
+}
+
+.tabs1entry {
+float:left;border: 1px solid red;width: 25%;height: 200px;color: 
+white;text-align: center;background-color:rgba(13, 13, 13, 0.5); 
+font-size: 40px; padding-bottom: 50px;font-family: sans-serif;
+}
+*/
+/*#footer { 
+position:absolute;
+top: 803px; left:0px; right: 0px; 
+height: 150px;
+border: 1px solid red;
+background-color:rgb(71, 71, 71);    
+color:white;   
+ clear:both;    
+ text-align:center;    
+ padding:5px; }*/
         
         </style>
 
@@ -43,24 +145,45 @@
     
     <body>
     
-    <ul id="menu">
-         <li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html">Home</a></li>
-         <li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html">Contact Us</a></li>
-         <li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html">Who Are We?</a></li>
-         <li><a href="https://www.facebook.com/kevin.tom.902?fref=ts">Want Dick?</a></li>
-    </ul>
-
-       <div>
-    <img src="http://accesspressthemes.com/accesspress-ray/wp-content/uploads/2014/10/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg"  
-    style="width: 100%; height: 500px; z-index: -1; background: rgba(70, 72, 82, 0.3);">
-
-   
-        <h1>ACM</h1>
-        <p> Hello! Welcome to the ACM website. </p>
-    
-
-    <img src="http://ubacm.org/img/slide-3.jpg" style="float:left; width:300px; height:200px;">
-    </div>
+   <ul id="menu">            
+			<li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html">Home</a></li>            
+			<li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html">Contact Us</a></li>            
+			<li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html">Who Are We?</a></li>            
+			<li><a href="https://www.facebook.com/kevin.tom.902?fref=ts" target="_blank">Want Dick?</a></li>        
+		</ul> 
+		
+		<ul id="menu1">
+		<li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html" style ="position:absolute; left: 0px;">MEETINGS</a></li>
+		<li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html" style="position:absolute; left: 320px;">EVENTS</a></li>            			
+		<li><a href="http://htmlpreview.github.io/?https://github.com/davidkhuynh/dhuynh/blob/gh-pages/index.html" style="position:absolute; left:630px">JOIN</a></li>            			
+		<li><a href="https://www.facebook.com/kevin.tom.902?fref=ts" style="position:absolute; left: 920px">WANT DICK KEV?</a></li>        		
+		</ul> 
+		
+		<div id="headerSection">
+		<p class="headerStyle"><b>Association Of Computing Machinery (ACM)<b></p></div>
+		
+		<div id="section">
+			<p class="sectionStyle" style="font-size: 30px;">Who Are We?</b></p>
+			<img style="height: 199px; float:right;" src="http://www.indiantelevision.com/sites/drupal7.indiantelevision.co.in/files/images/exec-life-images/2015/04/10/pt%202.jpg"></img>
+			<p class="sectionStyle" style="font-weight: 100; font-size: 23px">The <u>Association of Computing Machinery</u> itself is the world’s largest educational and scientific computing society.
+			<br><br> At De Anza, we strive to recreate this society on a local basis by promoting social interaction between computer scientists, students with a slight interest in computer science, and those who want to see what computer science is all about. 
+			<br><br>The De Anza’s Unofficial Chapter works to promote, preserve, and foster one’s interest in computer science. We, as a club, have open arms for all.</p>
+		</div>
+		
+		<div id="footer">	
+		</div>
+		
+		<div>
+			<a href="https://www.facebook.com/kevin.tom.902?fref=ts"><img style="height: 199px"class="image1" src="http://www.indiantelevision.com/sites/drupal7.indiantelevision.co.in/files/images/exec-life-images/2015/04/10/pt%202.jpg"></a>
+			<a href="https://www.facebook.com/kevin.tom.902?fref=ts"><img style="height:199px;"class="image2" src="http://40.media.tumblr.com/tumblr_lobpiiwufK1qzv218o1_1280.jpg"></a>
+			<a href="https://www.facebook.com/kevin.tom.902?fref=ts"><img style="height:199px;" class="image3" src="https://timeswampland.files.wordpress.com/2013/03/tumblr_misbxcl0l31qz61voo1_1280.jpeg?w=480&h=320&crop=1"></a>
+			<a href="https://www.facebook.com/kevin.tom.902?fref=ts"><img style="width:24.6%; height:199px;"class="image4" src="http://www.unifocus.com/sites/default/files/worldscreens%20picture.jpg"></a>
+		</div>
+		
+		
+		
+			<img class="format" src="http://accesspressthemes.com/accesspress-ray/wp-content/uploads/2014/10/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg">
+			
     </body>
     
 </html>
